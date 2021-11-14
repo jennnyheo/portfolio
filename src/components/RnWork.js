@@ -58,13 +58,13 @@ const RnWork = ({ setShowRnWork }) => {
                   >
                     <div className="links">
                       <div>
-                        <a href="/https://github.com/jennnyheo/higher">
+                        <a href="https://github.com/jennnyheo/higher">
                           <IoLogoGithub />
                           <span>github</span>
                         </a>
                       </div>
                       <div>
-                        <a href="/https://github.com/jennnyheo/higher">
+                        <a href="https://github.com/jennnyheo/higher">
                           <IoIosLink />
                           <span>file</span>
                         </a>

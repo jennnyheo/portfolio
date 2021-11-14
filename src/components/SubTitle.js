@@ -41,10 +41,6 @@ const SubTitle = () => {
           </span>
 
           <span>
-            <a href="/about">ABOUT</a>
-          </span>
-
-          <span>
             <a href="/work">WORK</a>
           </span>
 

@@ -63,13 +63,13 @@ const JsWork = ({ setShowJsWork }) => {
                   >
                     <div className="links">
                       <div>
-                        <a href="/https://github.com/jennnyheo/sheerhouse">
+                        <a href="https://github.com/jennnyheo/sheerhouse">
                           <IoLogoGithub />
                           <span>github</span>
                         </a>
                       </div>
                       <div>
-                        <a href="/#">
+                        <a href="https://drive.google.com/file/d/1jWufIiIETE0WJgnMlJLaTvZTDNfScc6x/view">
                           <IoIosLink />
                           <span>file</span>
                         </a>

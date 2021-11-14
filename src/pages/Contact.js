@@ -46,11 +46,11 @@ export default function Contact() {
             <div className="worksHeaderContainer">
               <span>Contact</span>
               <div className="contactLinks">
-                <a href="/">
+                <a href="https://www.linkedin.com/in/heeju-heo-a400a3172/">
                   <GrLinkedin />
                   LinkedIn
                 </a>
-                <a href="/">
+                <a href="https://github.com/jennnyheo">
                   <GrGithub />
                   Github
                 </a>

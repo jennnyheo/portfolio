@@ -62,13 +62,13 @@ const RrWork = ({ setShowRrWork }) => {
                   >
                     <div className="links">
                       <div>
-                        <a href="/https://github.com/jennnyheo/e-commerce-app/tree/master">
+                        <a href="https://github.com/jennnyheo/e-commerce-app/tree/master">
                           <IoLogoGithub />
                           <span>github</span>
                         </a>
                       </div>
                       <div>
-                        <a href="/https://github.com/jennnyheo/e-commerce-app/tree/master">
+                        <a href="https://github.com/jennnyheo/e-commerce-app/tree/master">
                           <IoIosLink />
                           <span>file</span>
                         </a>
