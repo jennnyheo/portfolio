@@ -51,7 +51,7 @@ const JsWork = ({ setShowJsWork }) => {
                       사용자는 본인의 과거예약 및 현재 예약사항을 확인할 수 있고
                       호스트와 연락을 할 수 있도록 이메일 API를 사용했습니다.
                       <br />
-                      <br /> 데이터베이스는 AWS EC2의 MYSQL을 사용했습니다.
+                      <br /> 데이터베이스는 AWS EC2와 RDS MYSQL을 사용했습니다.
                       Mybatis를 사용하여 query를 작성하였고 이를 Controller와
                       연결하여 데이터를 화면에 출력하였습니다
                     </span>

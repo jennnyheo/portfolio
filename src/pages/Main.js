@@ -66,11 +66,37 @@ const Main = () => {
                 <span>passionative developer </span>
               </Marquee>
               <Marquee>
-                <span>full-stack developer </span>
+                <span>to be a full-stack developer </span>
               </Marquee>
             </motion.div>
           </div>
           <Lines />
+        </div>
+        <section className="brefWorkContainer">
+          <div>
+            <span>JAVA · Spring project</span>
+            <div className="displayNone">
+              <p>JSP & JAVA Spring을 이용한 숙소예약, 호스팅 사이트</p>
+              <a href="/work">See more</a>
+            </div>
+          </div>
+          <div>
+            <span>React project</span>
+            <div className="displayNone">
+              <p>React을 이용한 E-commerce</p>
+              <a href="/work">See more</a>
+            </div>
+          </div>
+          <div>
+            <span>Next · React Spring project</span>
+            <div className="displayNone">
+              <p>React & Next을 활용한 개발자 취업플랫폼</p>
+              .brefWorkContainer div .displayNone
+            </div>
+          </div>
+        </section>
+        <div className="seeMoreMobile">
+          <a href="/work">See projects</a>
         </div>
       </div>
     </motion.div>
