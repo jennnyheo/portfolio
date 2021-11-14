@@ -1,38 +1,450 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
 .App {
+  width: 100%;
+  height: 100vh;
+  background-color: #fefbf3;
+  /* transition: 0.3s ease-in-out; */
+}
+
+.backgroundContainer {
+  /* width: 98%;
+  height: 95vh;
+  margin: auto; */
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  border-radius: 3px;
+  border: 1px solid #657379;
+}
+
+.titleContainer .titles {
+  width: 780px;
+  height: 70px;
+  margin: auto;
+  padding-top: 200px;
+  text-align: center;
+  display: flex;
+}
+.titleContainer .titles div {
+  height: 180px;
+  width: 150px;
+}
+.titleContainer .titles span {
+  font-size: 120px;
+  text-align: center;
+  padding-right: 10px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 900;
+  color: #232931;
+  display: block;
+}
+.titleDescri {
+  width: 450px;
+  border-radius: 3px;
+  margin: 220px auto;
+  text-align: center;
+  color: #eeeeee;
+}
+.titleDescri span {
+  display: block;
+  font-size: 20px;
+  background-color: #232931;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.titleDescri-sub {
+  width: 450px;
+  border-radius: 3px;
+  margin: 10px auto;
+  text-align: center;
+  color: #232931;
+}
+
+.titleDescri-sub span {
+  margin: 0 20px 0 20px;
+  cursor: pointer;
+  color: #232931;
+}
+
+.titleDescri-sub a {
+  text-decoration: none;
+  color: #232931;
+}
+
+.mainContainer {
+  background-color: hsl(27, 100%, 98%);
+  height: 100%;
+}
+
+.mainNavContainer ul {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  list-style: none;
+  margin-left: 40px;
+  padding-top: 30px;
+}
+
+.mainNavContainer ul li {
+  cursor: pointer;
+}
+
+.mainNavContainer ul li a {
+  color: #515e63;
+}
+
+.mainNavContainer ul li a:hover {
+  border-bottom: 1px solid #515e63;
+}
+
+.mySelfContainer {
+  width: 1100px;
+
+  margin: 200px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mySelfContainer .helloSpan {
+  font-size: 60px;
+  display: block;
+  letter-spacing: 7px;
+  margin-bottom: 25px;
+}
+.mySelfContainer span {
+  font-size: 52px;
+}
+
+.mySelfContainer .iamSpan {
+  letter-spacing: 5px;
+}
+
+.spiningBanner {
+  width: 170px;
+  margin-top: 45px;
+}
+.spiningBanner span {
+  font-size: 18px;
+  display: block;
+  letter-spacing: 3px;
+}
+
+.worksContainer {
+  /* background-color: #515e63; */
+}
+.worksContainer ul li {
+  color: #515e63;
+}
+.worksHeaderContainer {
+  margin-right: 100px;
+}
+.worksHeaderContainer span {
+  font-size: 60px;
+  color: #515e63;
+  display: block;
+  margin-left: 60px;
+  margin-top: 60px;
+  font-weight: 300;
+}
+.worksHeaderContainer p {
+  margin-left: 62px;
+}
+.workContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  height: 60vh;
+}
+.works {
+  margin-top: 30px;
+  margin-left: 160px;
+}
+.work {
+  height: 130px;
+  width: 90%;
+  color: rgba(0, 0, 0, 0.596);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.workDescri {
+  display: block;
+  font-size: 42px;
+  height: 100px;
+  cursor: pointer;
+  padding-top: 30px;
+  z-index: 1;
+}
+.divider {
+  width: 250px;
+  height: 1px;
+  border-bottom: 3px dotted rgba(0, 0, 0, 0.596);
+  margin: auto;
+}
+.overlay {
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* .hoverTextContainer {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 30px;
+  z-index: 9;
+  cursor: pointer;
+  color: transparent;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+.projectHoverHeader {
+  display: block;
+  font-size: 36px;
+  font-style: italic;
+} */
+/* .displayNone {
+  display: block;
+} */
+.hoverTextContainer {
+  transition: 0.3s ease-in-out;
+}
+.hoverTextContainer:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgb(255, 249, 245);
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.moreProjects {
+  font-family: "Gothic A1", sans-serif;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #657379;
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+}
+/* modal */
+.rnWorkTotalContainer {
+  width: 80%;
+  z-index: 99999;
+  z-index: 9999;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding-bottom: 50px;
+}
+.rnWorkContainer span p {
+  font-family: "Gothic A1", sans-serif;
+}
+.rnWorkContainer {
+  border-radius: 20px;
+  height: 85vh;
+  background-color: #fcfaf7;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10px 0 70px;
+}
+
+.rnWorkDescriContainer {
+  width: 330px;
+  padding-top: 60px;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.rnWorkDescriContainer h2 {
+  font-size: 70px;
+  margin-bottom: 40px;
+  color: #4b5558;
+  line-height: 60px;
+}
+.rnDescriHeSection {
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-family: "Gothic A1", sans-serif;
+}
+
+.rnDescriSection span,
+p {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 3 px;
+  font-family: "Gothic A1", sans-serif;
+}
+.rnImgContainer {
+  padding-top: 50px;
+  margin-top: 120px;
+  margin-left: 30px;
+}
+.rnImgContainer img {
+  width: 550px;
+}
+.links {
+  display: flex;
+}
+.links div {
+  width: 130px;
+  padding: 7px;
+  margin-top: 20px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+.links div a {
+  color: #fefbf3;
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  background-color: #657379;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 6px 0px 6px 0;
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.links div a :last-child {
+  padding-right: 5px;
+}
+.links div a:hover {
+  background-color: #fefbf3;
+  color: #657379;
+  border: 1px solid #657379;
+}
+.links span {
+  margin-left: 7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.closeBtn {
+  font-size: 30px;
+  height: 30px;
+  padding-right: 10px;
+}
+
+.imgContainer {
+  margin-left: 10px;
+  width: 500px;
+  margin-top: 30px;
+}
+
+.imgContainer img {
+  width: 400px;
+  height: 200px;
+}
+
+.bottom-margin {
+  margin-bottom: 3px;
+}
+.imgJsWorkContainer {
+  margin-left: 20px;
+}
+.imgJsWorkContainer .jsWorkPhotoMain {
+  margin-left: 10px;
+  width: 560px;
+  margin-top: 50px;
+}
+
+.svg {
+  position: absolute;
+  z-index: 9999;
+}
+
+/* work lmage slider styles */
+.sliderContainer {
+  width: 520px;
+  height: 700px;
+  overflow: hidden;
+}
+.marquee {
+  display: flex;
+  margin-right: 20px;
+}
+.slideImages img {
+  width: 250px;
+  height: 150px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.formContainer {
+  width: 1200px;
+  margin: 120px auto;
+  background-color: aliceblue;
+}
+
+.contactForm {
+  width: 800px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #515e63;
+  margin-right: 50px;
+}
+.insideHeader {
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  text-align: left;
+}
+.contactForm h2 {
+  margin: 10px 0 5px 0;
+  font-weight: 500;
+}
+
+.contactForm input[type="text"],
+input[type="email"] {
+  height: 30px;
+  width: 300px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.messageArea {
+  display: block;
+  width: 300px;
+  margin: auto;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.submitBtn {
+  color: #fefbf3;
+  display: block;
+  width: 300px;
+  margin: auto;
+  height: 40px;
+  font-size: 16px;
+  text-decoration: none;
+  background-color: #657379;
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
+  padding: 8px 0px 8px 0;
+}
+
+.submitBtn:hover {
+  background-color: #fefbf3;
+  color: #657379;
+  border: 1px solid #657379;
+}
+
+.contactLinks {
+  padding-left: 70px;
+  margin-top: 10px;
+}
+
+.contactLinks a {
+  color: #657379;
+  margin-right: 20px;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 14px;
+}
+
+.contactLinks svg {
+  margin-right: 5px;
 }
