@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import React, { useEffect, useRef } from "react";
 import "./../App.css";
+import { useHistory } from "react-router-dom";
 const Background = () => {
   useEffect(() => {
     const element = document.querySelector(".backgroundContainer");
@@ -14,6 +15,10 @@ const Background = () => {
       import("./Title")
     );
   });
+  const history = useHistory();
+  setTimeout(() => {
+    history.push("/main");
+  }, 5000);
   return (
     <div className="backgroundContainer">
       <Suspense fallback={""}>
