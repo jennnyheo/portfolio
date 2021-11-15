@@ -91,7 +91,6 @@ const Main = () => {
             <span>Next · React Spring project</span>
             <div className="displayNone">
               <p>React & Next을 활용한 개발자 취업플랫폼</p>
-              .brefWorkContainer div .displayNone
             </div>
           </div>
         </section>
