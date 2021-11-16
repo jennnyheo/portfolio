@@ -63,7 +63,7 @@ const JsWork = ({ setShowJsWork }) => {
                   >
                     <div className="links">
                       <div>
-                        <a href="https://github.com/jennnyheo/sheerhouse">
+                        <a href="https://github.com/jennnyheo/sheerhouse_">
                           <IoLogoGithub />
                           <span>github</span>
                         </a>
